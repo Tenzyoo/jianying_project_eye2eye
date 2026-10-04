@@ -1,0 +1,17 @@
+# macOS
+.DS_Store
+
+# 视频/图片/音频素材（体积约 16GB，通过网盘分发，见 README.md）
+Resources/local/
+
+# 备份与临时文件
+.backup/
+*.bak
+*.tmp
+
+# 密钥文件（敏感，不上传）
+crypto_key_store.dat
+crypto_key_store.dat.bak
+
+# Claude Code 本地配置
+.claude/
