@@ -1,0 +1,332 @@
+1
+00:00:00,800 --> 00:00:02,499
+When people work side by side,
+
+2
+00:00:02,499 --> 00:00:05,613
+a glance or a gesture is often enough to be understood.
+
+3
+00:00:06,463 --> 00:00:10,707
+Can an AI assistant that sees through our eyes collaborate the same way?
+
+4
+00:00:16,057 --> 00:00:19,840
+Imagine organizing a crowded family bookshelf, with Dad's classics,
+
+5
+00:00:19,840 --> 00:00:22,776
+your sister's picture books, and your own textbooks,
+
+6
+00:00:22,776 --> 00:00:25,148
+helped by an AI assistant in your glasses.
+
+7
+00:00:25,998 --> 00:00:30,149
+Today's assistants make you translate what you see and do into words.
+
+8
+00:00:30,149 --> 00:00:34,600
+Rich, parallel physical intent gets squeezed into a single verbal channel.
+
+9
+00:00:34,600 --> 00:00:36,464
+This is the communication gulf.
+
+10
+00:00:37,314 --> 00:00:41,065
+And even when the AI recognizes objects, it misses embodied cues,
+
+11
+00:00:41,065 --> 00:00:44,065
+like a hesitant gaze or a pause with a book in hand,
+
+12
+00:00:44,065 --> 00:00:47,122
+and it forgets the personal rules you just agreed on.
+
+13
+00:00:47,122 --> 00:00:48,911
+This is the understanding gulf.
+
+14
+00:00:49,761 --> 00:00:50,397
+So we ask:
+
+15
+00:00:50,397 --> 00:00:53,447
+how can a shared first-person perspective enable
+
+16
+00:00:53,447 --> 00:00:56,816
+continuous cognitive alignment between humans and AI?
+
+17
+00:00:57,666 --> 00:00:58,911
+We introduce Eye2Eye,
+
+18
+00:00:58,911 --> 00:01:01,935
+a framework that turns the first-person view from a
+
+19
+00:01:01,935 --> 00:01:05,137
+passive input into a shared channel for collaboration.
+
+20
+00:01:05,137 --> 00:01:07,331
+It closes a loop of three components.
+
+21
+00:01:08,181 --> 00:01:08,428
+One:
+
+22
+00:01:08,428 --> 00:01:09,415
+joint attention.
+
+23
+00:01:09,415 --> 00:01:14,286
+From human to AI, Eye2Eye captures speech, gaze, and gestures such as pointing,
+
+24
+00:01:14,286 --> 00:01:18,602
+touching, and grasping, to detect interaction events and infer intent.
+
+25
+00:01:19,452 --> 00:01:23,785
+From AI to human, it makes its own focus visible through visual highlights,
+
+26
+00:01:23,785 --> 00:01:27,771
+voice, and text labels, so both partners converge on the same object.
+
+27
+00:01:28,621 --> 00:01:28,864
+Two:
+
+28
+00:01:28,864 --> 00:01:30,442
+accumulated common ground.
+
+29
+00:01:30,442 --> 00:01:33,597
+Each interaction is stored in a dynamic object card:
+
+30
+00:01:33,597 --> 00:01:36,207
+what the object is, what the user intended,
+
+31
+00:01:36,207 --> 00:01:38,877
+how the AI responded, and whether it worked.
+
+32
+00:01:38,877 --> 00:01:42,821
+Cards persist, and they are revised whenever the AI is corrected.
+
+33
+00:01:43,671 --> 00:01:44,021
+Three:
+
+34
+00:01:44,021 --> 00:01:45,714
+reflective situated feedback.
+
+35
+00:01:45,714 --> 00:01:49,334
+Using that common ground, the AI picks one of four strategies:
+
+36
+00:01:49,334 --> 00:01:52,428
+object recognition, error checking, knowledge recall,
+
+37
+00:01:52,428 --> 00:01:55,638
+or action planning, each mixing visual and verbal cues.
+
+38
+00:01:55,638 --> 00:02:00,017
+It then watches how the user reacts, and writes the outcome back to memory.
+
+39
+00:02:00,867 --> 00:02:05,404
+Together, these components form a continuous perceive, align, and reflect loop.
+
+40
+00:02:06,254 --> 00:02:08,677
+Our prototype runs on Apple Vision Pro.
+
+41
+00:02:08,677 --> 00:02:11,473
+YOLO tracks objects in the first-person view.
+
+42
+00:02:11,473 --> 00:02:15,760
+When a hand overlaps an object, or gaze dwells on it for six seconds,
+
+43
+00:02:15,760 --> 00:02:20,731
+an event fires, and GPT-4o interprets the frame together with the user's speech.
+
+44
+00:02:21,581 --> 00:02:23,967
+That state is embedded and matched against
+
+45
+00:02:23,967 --> 00:02:26,411
+existing object cards by cosine similarity.
+
+46
+00:02:26,411 --> 00:02:29,706
+The best match is retrieved, fused with the current state,
+
+47
+00:02:29,706 --> 00:02:31,695
+and the card is created or updated.
+
+48
+00:02:32,545 --> 00:02:36,159
+Finally, the model selects a feedback strategy and modality,
+
+49
+00:02:36,159 --> 00:02:39,352
+rendered in AR and spoken with Gemini text-to-speech,
+
+50
+00:02:39,352 --> 00:02:41,822
+in about four to five seconds end to end.
+
+51
+00:02:42,672 --> 00:02:44,860
+Let's walk through a complete example.
+
+52
+00:02:46,510 --> 00:02:48,013
+USER: What kind of book is this?
+
+53
+00:02:48,363 --> 00:02:50,307
+AI: "Great by Choice" is a business book.
+
+54
+00:02:51,957 --> 00:02:53,268
+When the user hesitates,
+
+55
+00:02:53,268 --> 00:02:57,310
+Eye2Eye picks up the cue from gaze and hand movement, without being asked.
+
+56
+00:02:57,660 --> 00:03:00,578
+AI: I recommend the Toolkit category for easy access,
+
+57
+00:03:00,578 --> 00:03:02,484
+AI: rather than the Design category.
+
+58
+00:03:04,134 --> 00:03:05,523
+USER: I should put this book in...
+
+59
+00:03:05,873 --> 00:03:08,369
+AI: You can put this book in the Biology section.
+
+60
+00:03:08,719 --> 00:03:11,091
+USER: I don't think Biology is the right fit.
+
+61
+00:03:11,091 --> 00:03:15,956
+USER: My little sister loves these books specifically, not the whole Biology category.
+
+62
+00:03:17,606 --> 00:03:21,487
+AI: Okay, let's create a new section for this, called Children's Reading.
+
+63
+00:03:21,837 --> 00:03:24,682
+The correction is written back into the object card.
+
+64
+00:03:26,332 --> 00:03:27,800
+USER: Where should I put this one?
+
+65
+00:03:28,150 --> 00:03:31,136
+AI: The dinosaur book should go in Children's Reading as well.
+
+66
+00:03:32,786 --> 00:03:34,892
+USER: These books aren't on the same theme.
+
+67
+00:03:34,892 --> 00:03:36,714
+USER: Do they go in the same category?
+
+68
+00:03:37,064 --> 00:03:38,693
+AI: Based on our earlier agreement,
+
+69
+00:03:38,693 --> 00:03:42,740
+AI: these books are mainly images and photographs, so they belong in Visual Arts.
+
+70
+00:03:44,390 --> 00:03:46,577
+USER: Let's put this in Expression Training.
+
+71
+00:03:46,927 --> 00:03:48,653
+AI: That category isn't quite right.
+
+72
+00:03:48,653 --> 00:03:52,591
+AI: Thinking Training keeps it with the rest of the Pyramid Principle series.
+
+73
+00:03:54,241 --> 00:03:59,193
+Beyond bookshelves, the same loop guides procedural tasks like operating a coffee machine,
+
+74
+00:03:59,193 --> 00:04:02,385
+and inspection tasks like troubleshooting a circuit board.
+
+75
+00:04:03,235 --> 00:04:07,408
+We compared Eye2Eye with a baseline using the same headset and models,
+
+76
+00:04:07,408 --> 00:04:10,449
+in a study with sixty participants and three tasks.
+
+77
+00:04:11,299 --> 00:04:17,059
+Eye2Eye reduced the likelihood of errors by about fifty-eight percent, cut clarification turns by half,
+
+78
+00:04:17,059 --> 00:04:21,365
+and reduced interaction turns in the procedural task by twenty-three percent.
+
+79
+00:04:22,215 --> 00:04:25,072
+Errors also accumulated far more slowly over time,
+
+80
+00:04:25,072 --> 00:04:29,073
+and participants rated the collaboration as significantly more fluent,
+
+81
+00:04:29,073 --> 00:04:31,245
+more co-present, and more trustworthy.
+
+82
+00:04:32,095 --> 00:04:36,506
+By sharing what we see, humans and AI can do more than look at the same thing.
+
+83
+00:04:36,506 --> 00:04:38,202
+They can truly see eye to eye.
+

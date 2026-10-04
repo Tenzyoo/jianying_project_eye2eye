@@ -1,0 +1,40 @@
+68c9156ea5d163012ce666b8	10.4s	We introduce IRI, a collaborative framework dedicated to sharing a first-person perspective between humans and AI aiming to achieve cognitive alignment.
+68c916b667330a013923a538	10.9s	Imagine a chaotic family bookshelf overflowing with my dad's classics, my sister's novels, and my own textbooks. It's time for a complete refresh.
+68c917e96cf664012bf18e3f	3.4s	This time, let's get some help from IRI.
+68c926ec8ec541012a3e5ed7	6.7s	Hey, I'm Chuo Ai. Let's organize this bookshelf. Create the perfect reading space for everyone in the family.
+68c9278c8ac88d0131117f98	3.3s	I'm so so so so so so so so so so so so so so so so so
+68c92808d98462012af0b970	1.6s	我也是这个玩具
+68c9322e2347fe0127aa046d	10.6s	From human to AI, AI or AI captures cues like speech, gaze, and gestures to understand the interaction events and infer the user's intent.
+68c938240ab5cc013e23ab3e	9.4s	From AI to Human, the AI communicates its own focus back to the user using visual highlights, auditory prompts, and text overlays.
+68c93cf0f2849c012ac227d7	7.0s	This bi-directional attention allows humans and AI to precisely and efficiently converge on the same object.
+68c940d33e6f67013ccee388	13.3s	An interaction event captured by joint attention triggers the VLM to perform high-level reasoning. It analyzes the current situation to understand the object, the user's action, and their intent.
+68c94116199180012bbe26fe	14.4s	This information is then used to create or update a dynamic object card, which serves as the unit for a common ground. This process ensures both the continuous accumulation of experience and the loss for future revisibility.
+68c948abd98462012af4b0e2	6.2s	This updated or revised common ground, in turn, guides the AI situated feedback.
+68c94becb12b2c012b154da6	3.0s	You can put this book in the biology section.
+68c9596ea49c7d012e8de460	1.6s	Okay, got it.
+68c9598d3c317a012fea5a5a	6.5s	By tracking user reactions to feedback, IR learns to correct and improve itself.
+68c959ec3c317a012fea664d	8.4s	We offer four types of situated feedback, each corresponding to a different level of detail and intensity of attentional guidance.
+68c974b23e6f67013cd54ecd	2.4s	"Great Buy Choice" is a business book.
+68c984798ac88d01311cd831	2.1s	"Grid by Choice" is a business work.
+68c984a4d98462012afc0434	4.9s	Why these books are not of the same theme? Do we put them into the same category?
+68c985e53c317a012fefc6cd	9.7s	Based on our previous consensus, these books are mainly composed of images and photographs, so we categorize them under the visual arts category.
+68ca15b6525df00128492763	2.9s	Let's put this in the example training category.
+68ca17b58ec541012a4ec20b	8.0s	This category isn't quite suitable, it's better to put it in thinking training to maintain consistency with the pyramid principle series.
+68ca1a75c94415012a62884f	5.2s	I recommend the Chalker Caliguri for easy access rather than the design Caliguri.
+68ca1d1d3c317a012ff53217	5.8s	The user is hesitating whether to place this book in the design category or the tools category.
+68ca23d18ac88d0131232bc3	9.6s	The three components of the IRI framework thus create a continuous loop, progressively fostering cognitive alignment as the interaction continues.
+68ca2fdfd9f4f4010dafa589	3.1s	Let's walk through a complete example together.
+68ca30f5c0f85601291671fa	3.0s	I should put this book in.
+68ca3130e2ce9a012a09bdb2	7.4s	I don't think biology is the red fat. My little sister loves these books specifically, not the whole biology category.
+68ca31b42347fe0127bbeb05	2.1s	you can still put it under biology.
+68ca31de3c317a012ff7ab56	1.9s	Each time I mash would put this book in.
+68ca34dbb12b2c012b248b91	6.9s	Okay, let's create a new section for this called "Children's Reading". The dinosaur book should go in there as well.
+68ca43ce8ec541012a53a99f	19.2s	Ultimately, our user studies and pipeline evaluations revealed that during continuous interaction, the joint cognitive system formed by IRI and the human-maintained lower error rate and less interaction or friction disfostered in users a greater sense of co-presence and performance trust.
+68ca77bd101c3a012a6a6967	10.4s	We introduce I2I, a collaborative framework dedicated to sharing a first-person perspective between humans and AI aiming to achieve cognitive alignment.
+68ca782112b42f012c1abf26	3.5s	This time, let's get some help from Eye2Eye.
+68ca785496a34b012c6a68f7	10.4s	From human to AI, eye-to-eye captures cues like speech, gaze, and gestures to understand the interaction events and infer the user's intent.
+68ca7967a62eff012c44b040	9.2s	From AI to Human, the AI communicates its own focus back to the user using visual highlights, auditory prompts, and text label.
+68ca79c4d477b5012f61836c	6.2s	By checking user reactions to feedback, I2I learns to correct and improve itself.
+68ca7bd381e2f9012a6926f6	9.4s	From AI to Human, the AI communicates its own focus back to the user using visual feedback, voice feedback, and text feedback.
+68ca7ca3527ffe01308ad426	9.6s	The three components of the I2I framework thus create a continuous loop, progressively fostering cognitive alignment as the interaction continues.
+68ca7cef9308fd012ab09a3b	19.2s	Ultimately, our user studies and pipeline evaluations revealed that during continuous interaction, the joint cognitive system formed by eye-to-eye and the human-maintained lower error rate and less interactional friction disfostered in users a greater sense of co-presence and performance trust.

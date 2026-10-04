@@ -1,0 +1,565 @@
+[
+ {
+  "id": "0.1",
+  "sec": "Opening",
+  "vis": [
+   "footage",
+   "t开头2.MP4",
+   "全家书架远景，杂乱的书堆",
+   "shelf"
+  ],
+  "lines": [
+   [
+    "N",
+    "When people work side by side, a glance or a gesture is often enough to be understood."
+   ]
+  ],
+  "label": "",
+  "start": 0.0,
+  "end": 6.01
+ },
+ {
+  "id": "0.2",
+  "sec": "Opening",
+  "vis": [
+   "footage",
+   "t戴眼镜.MP4",
+   "第三人称：用户戴上 Vision Pro 站在书架前",
+   "avp"
+  ],
+  "lines": [
+   [
+    "N",
+    "Can an AI assistant that sees through our eyes collaborate the same way?"
+   ]
+  ],
+  "label": "",
+  "start": 6.01,
+  "end": 11.11
+ },
+ {
+  "id": "0.3",
+  "sec": "Opening",
+  "vis": [
+   "slide",
+   "title"
+  ],
+  "lines": [],
+  "label": "",
+  "start": 11.11,
+  "end": 15.61
+ },
+ {
+  "id": "1.1",
+  "sec": "Motivation",
+  "vis": [
+   "footage",
+   "t开头放回.MP4",
+   "用户拿起书又放回，犹豫不决",
+   "shelf2"
+  ],
+  "lines": [
+   [
+    "N",
+    "Imagine organizing a crowded family bookshelf, with Dad's classics, your sister's picture books, and your own textbooks, helped by an AI assistant in your glasses."
+   ]
+  ],
+  "label": "",
+  "start": 15.61,
+  "end": 25.55
+ },
+ {
+  "id": "1.2",
+  "sec": "Motivation",
+  "vis": [
+   "slide",
+   "gulf_comm"
+  ],
+  "lines": [
+   [
+    "N",
+    "Today's assistants make you translate what you see and do into words. Rich, parallel physical intent gets squeezed into a single verbal channel. This is the communication gulf."
+   ]
+  ],
+  "label": "",
+  "start": 25.55,
+  "end": 36.86
+ },
+ {
+  "id": "1.3",
+  "sec": "Motivation",
+  "vis": [
+   "slide",
+   "gulf_under"
+  ],
+  "lines": [
+   [
+    "N",
+    "And even when the AI recognizes objects, it misses embodied cues, like a hesitant gaze or a pause with a book in hand, and it forgets the personal rules you just agreed on. This is the understanding gulf."
+   ]
+  ],
+  "label": "",
+  "start": 36.86,
+  "end": 49.31
+ },
+ {
+  "id": "1.4",
+  "sec": "Motivation",
+  "vis": [
+   "slide",
+   "rq"
+  ],
+  "lines": [
+   [
+    "N",
+    "So we ask: how can a shared first-person perspective enable continuous cognitive alignment between humans and AI?"
+   ]
+  ],
+  "label": "",
+  "start": 49.31,
+  "end": 57.22
+ },
+ {
+  "id": "2.1",
+  "sec": "Framework",
+  "vis": [
+   "slide",
+   "fig2"
+  ],
+  "lines": [
+   [
+    "N",
+    "We introduce Eye2Eye, a framework that turns the first-person view from a passive input into a shared channel for collaboration. It closes a loop of three components.",
+    "We introduce Eye-to-Eye, a framework that turns the first-person view from a passive input into a shared channel for collaboration. It closes a loop of three components."
+   ]
+  ],
+  "label": "",
+  "start": 57.22,
+  "end": 67.73
+ },
+ {
+  "id": "2.2",
+  "sec": "Framework",
+  "vis": [
+   "slide",
+   "fig3_human"
+  ],
+  "lines": [
+   [
+    "N",
+    "One: joint attention. From human to AI, Eye2Eye captures speech, gaze, and gestures such as pointing, touching, and grasping, to detect interaction events and infer intent.",
+    "One: joint attention. From human to AI, Eye-to-Eye captures speech, gaze, and gestures such as pointing, touching, and grasping, to detect interaction events and infer intent."
+   ]
+  ],
+  "label": "I · Joint Attention",
+  "start": 67.73,
+  "end": 79.0
+ },
+ {
+  "id": "2.3",
+  "sec": "Framework",
+  "vis": [
+   "footage",
+   "VID_0007.AVI",
+   "Vision Pro 第一人称录屏：AI 对目标物体的高亮框 + 文字标签",
+   "pip_ux"
+  ],
+  "lines": [
+   [
+    "N",
+    "From AI to human, it makes its own focus visible through visual highlights, voice, and text labels, so both partners converge on the same object."
+   ]
+  ],
+  "label": "I · AI → Human",
+  "start": 79.0,
+  "end": 88.17
+ },
+ {
+  "id": "2.4",
+  "sec": "Framework",
+  "vis": [
+   "slide",
+   "fig5"
+  ],
+  "lines": [
+   [
+    "N",
+    "Two: accumulated common ground. Each interaction is stored in a dynamic object card: what the object is, what the user intended, how the AI responded, and whether it worked. Cards persist, and they are revised whenever the AI is corrected."
+   ]
+  ],
+  "label": "II · Common Ground",
+  "start": 88.17,
+  "end": 103.22
+ },
+ {
+  "id": "2.5",
+  "sec": "Framework",
+  "vis": [
+   "slide",
+   "fig6"
+  ],
+  "lines": [
+   [
+    "N",
+    "Three: reflective situated feedback. Using that common ground, the AI picks one of four strategies: object recognition, error checking, knowledge recall, or action planning, each mixing visual and verbal cues. It then watches how the user reacts, and writes the outcome back to memory."
+   ]
+  ],
+  "label": "III · Situated Feedback",
+  "start": 103.22,
+  "end": 120.42
+ },
+ {
+  "id": "2.6",
+  "sec": "Framework",
+  "vis": [
+   "slide",
+   "fig2"
+  ],
+  "lines": [
+   [
+    "N",
+    "Together, these components form a continuous perceive, align, and reflect loop."
+   ]
+  ],
+  "label": "",
+  "start": 120.42,
+  "end": 125.8
+ },
+ {
+  "id": "3.1",
+  "sec": "System",
+  "vis": [
+   "slide",
+   "fig4_I"
+  ],
+  "lines": [
+   [
+    "N",
+    "Our prototype runs on Apple Vision Pro. YOLO tracks objects in the first-person view. When a hand overlaps an object, or gaze dwells on it for six seconds, an event fires, and GPT-4o interprets the frame together with the user's speech."
+   ]
+  ],
+  "label": "Joint Attention pipeline",
+  "start": 125.8,
+  "end": 141.13
+ },
+ {
+  "id": "3.2",
+  "sec": "System",
+  "vis": [
+   "slide",
+   "fig4_II"
+  ],
+  "lines": [
+   [
+    "N",
+    "That state is embedded and matched against existing object cards by cosine similarity. The best match is retrieved, fused with the current state, and the card is created or updated."
+   ]
+  ],
+  "label": "Object-card memory (RAG)",
+  "start": 141.13,
+  "end": 152.1
+ },
+ {
+  "id": "3.3",
+  "sec": "System",
+  "vis": [
+   "slide",
+   "fig4_III"
+  ],
+  "lines": [
+   [
+    "N",
+    "Finally, the model selects a feedback strategy and modality, rendered in AR and spoken with Gemini text-to-speech, in about four to five seconds end to end."
+   ]
+  ],
+  "label": "Feedback generation",
+  "start": 152.1,
+  "end": 162.22
+ },
+ {
+  "id": "4.1",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "t开头2.MP4 / t戴眼镜.MP4",
+   "用户戴好头显走向书架（可接一个第一人称转场）",
+   "avp"
+  ],
+  "lines": [
+   [
+    "N",
+    "Let's walk through a complete example."
+   ]
+  ],
+  "label": "",
+  "start": 162.22,
+  "end": 166.06
+ },
+ {
+  "id": "4.2",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "great.MOV + Business Book.png",
+   "第一人称：拿起《Great by Choice》，AI 高亮书本并弹出文字标签 “Business Book”",
+   null
+  ],
+  "lines": [
+   [
+    "U",
+    "What kind of book is this?"
+   ],
+   [
+    "AI",
+    "\"Great by Choice\" is a business book."
+   ]
+  ],
+  "label": "Object Recognition · text label + short voice",
+  "start": 166.06,
+  "end": 171.51
+ },
+ {
+  "id": "4.3",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "t右上.MP4 / t右上2.MP4",
+   "用户拿着书在两层书架间来回看，手悬停；画面角落显示 AI 推理文字",
+   null
+  ],
+  "lines": [
+   [
+    "N",
+    "When the user hesitates, Eye2Eye picks up the cue from gaze and hand movement, without being asked.",
+    "When the user hesitates, Eye-to-Eye picks up the cue from gaze and hand movement, without being asked."
+   ],
+   [
+    "AI",
+    "I recommend the Toolkit category for easy access, rather than the Design category."
+   ]
+  ],
+  "label": "Implicit cue · hesitation",
+  "start": 171.51,
+  "end": 183.68
+ },
+ {
+  "id": "4.4",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "1鱼.MP4 / t鱼.MP4",
+   "第一人称：双手拿起《OCEAN》立体书，注视点停留（见缩略图）",
+   "ocean"
+  ],
+  "lines": [
+   [
+    "U",
+    "I should put this book in..."
+   ],
+   [
+    "AI",
+    "You can put this book in the Biology section."
+   ],
+   [
+    "U",
+    "I don't think Biology is the right fit. My little sister loves these books specifically, not the whole Biology category."
+   ]
+  ],
+  "label": "Action Planning",
+  "start": 183.68,
+  "end": 197.16
+ },
+ {
+  "id": "4.5",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "t灵机一动.MP4 + 灯泡贴纸",
+   "用户恍然、AI 新建分区；书架上出现 “Children's Reading” 标签",
+   "ocean2"
+  ],
+  "lines": [
+   [
+    "AI",
+    "Okay, let's create a new section for this, called Children's Reading."
+   ],
+   [
+    "N",
+    "The correction is written back into the object card."
+   ]
+  ],
+  "label": "Common ground revised",
+  "start": 197.16,
+  "end": 205.88
+ },
+ {
+  "id": "4.6",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "t恐龙.MP4",
+   "拿起恐龙书，AI 直接高亮 Children's Reading 分区",
+   null
+  ],
+  "lines": [
+   [
+    "U",
+    "Where should I put this one?"
+   ],
+   [
+    "AI",
+    "The dinosaur book should go in Children's Reading as well."
+   ]
+  ],
+  "label": "Memory reused",
+  "start": 205.88,
+  "end": 212.34
+ },
+ {
+  "id": "4.7",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "画.MOV / 画2.MOV + Visual Arts Category.png",
+   "两本主题不同的画册并排，AI 归入 Visual Arts",
+   null
+  ],
+  "lines": [
+   [
+    "U",
+    "These books aren't on the same theme. Do they go in the same category?"
+   ],
+   [
+    "AI",
+    "Based on our earlier agreement, these books are mainly images and photographs, so they belong in Visual Arts."
+   ]
+  ],
+  "label": "Knowledge Recall · text label + detailed voice",
+  "start": 212.34,
+  "end": 223.94
+ },
+ {
+  "id": "4.8",
+  "sec": "Demo",
+  "vis": [
+   "footage",
+   "金字塔.MOV",
+   "用户把《金字塔原理》放入表达训练区，AI 红框提示并指向思维训练区",
+   null
+  ],
+  "lines": [
+   [
+    "U",
+    "Let's put this in Expression Training."
+   ],
+   [
+    "AI",
+    "That category isn't quite right. Thinking Training keeps it with the rest of the Pyramid Principle series."
+   ]
+  ],
+  "label": "Error Checking · visual overlay + detailed voice",
+  "start": 223.94,
+  "end": 233.79
+ },
+ {
+  "id": "4.9",
+  "sec": "Demo",
+  "vis": [
+   "slide",
+   "fig7"
+  ],
+  "lines": [
+   [
+    "N",
+    "Beyond bookshelves, the same loop guides procedural tasks like operating a coffee machine, and inspection tasks like troubleshooting a circuit board."
+   ]
+  ],
+  "label": "Also: coffee machine · circuit board",
+  "start": 233.79,
+  "end": 242.78
+ },
+ {
+  "id": "5.1",
+  "sec": "Results",
+  "vis": [
+   "slide",
+   "study"
+  ],
+  "lines": [
+   [
+    "N",
+    "We compared Eye2Eye with a baseline using the same headset and models, in a study with sixty participants and three tasks.",
+    "We compared Eye-to-Eye with a baseline using the same headset and models, in a study with sixty participants and three tasks."
+   ]
+  ],
+  "label": "",
+  "start": 242.78,
+  "end": 250.85
+ },
+ {
+  "id": "5.2",
+  "sec": "Results",
+  "vis": [
+   "slide",
+   "numbers"
+  ],
+  "lines": [
+   [
+    "N",
+    "Eye2Eye reduced the likelihood of errors by about fifty-eight percent, cut clarification turns by half, and reduced interaction turns in the procedural task by twenty-three percent.",
+    "Eye-to-Eye reduced the likelihood of errors by about fifty-eight percent, cut clarification turns by half, and reduced interaction turns in the procedural task by twenty-three percent."
+   ]
+  ],
+  "label": "",
+  "start": 250.85,
+  "end": 261.76
+ },
+ {
+  "id": "5.3",
+  "sec": "Results",
+  "vis": [
+   "slide",
+   "fig89"
+  ],
+  "lines": [
+   [
+    "N",
+    "Errors also accumulated far more slowly over time, and participants rated the collaboration as significantly more fluent, more co-present, and more trustworthy."
+   ]
+  ],
+  "label": "",
+  "start": 261.76,
+  "end": 271.65
+ },
+ {
+  "id": "6.1",
+  "sec": "Closing",
+  "vis": [
+   "footage",
+   "t开头2.MP4（整理完成的书架）",
+   "整理完成的书架远景，缓慢推近",
+   "shelf"
+  ],
+  "lines": [
+   [
+    "N",
+    "By sharing what we see, humans and AI can do more than look at the same thing. They can truly see eye to eye."
+   ]
+  ],
+  "label": "",
+  "start": 271.65,
+  "end": 278.6
+ },
+ {
+  "id": "6.2",
+  "sec": "Closing",
+  "vis": [
+   "slide",
+   "end"
+  ],
+  "lines": [],
+  "label": "",
+  "start": 278.6,
+  "end": 284.1
+ }
+]

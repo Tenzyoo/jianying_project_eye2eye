@@ -4,6 +4,8 @@
 
 ## 仓库内容
 
+- **5 分钟投稿版重剪方案**：[`重剪_5min投稿版/剪辑方案.md`](重剪_5min投稿版/剪辑方案.md)（分镜表、新配音、字幕、图文卡片、样片）
+
 - 工程配置：`draft_content.json`、`draft_info.json`、`draft_meta_info.json` 等
 - 时间线：`Timelines/`
 - 文字/字幕资源：`textReading/`
